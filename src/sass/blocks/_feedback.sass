@@ -1,0 +1,81 @@
+.feedback
+    min-height: 660px
+    display: flex
+    justify-content: space-between
+    position: relative
+    &__bg-quest,&__bg-free
+        position: absolute
+        width: 50%
+        height: 100%
+        z-index: -1
+    &__bg-quest
+        background-color: $bg-color
+        left: 0
+    &__bg-free
+        background: url('../img/bg_free.jpg') center center/cover no-repeat
+        right: 0
+    & .container
+        display: flex
+        justify-content: space-between
+    & .title
+        font-size: 22px
+        line-height: 33px
+        text-align: left
+    & .descr
+        margin-top: 44px
+        font-size: 16px
+    &-question
+        width: 50%
+        padding-top: 102px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        &__list
+            padding: 0
+            margin: 0
+            margin-top: 84px
+            list-style: none
+            counter-reset: num
+        &__item
+            width: 448px
+            position: relative
+            font-size: 18px
+            font-weight: 500   
+            margin-top: 42px
+            padding-left: 68px
+            &:first-child
+                margin-top: 0 
+            &::before
+                counter-increment: num
+                content: counter(num) '.'
+                display: flex
+                justify-content: center
+                align-items: center
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: 0
+                width: 35px
+                height: 35px
+                border: 2px solid black
+                border-radius: 100%
+                font-size: 14px
+                font-weight: 700
+    &-free
+        padding-top: 102px
+        display: flex
+        flex-direction: column
+        align-items: center
+        & .title
+            text-align: center
+            width: 351px
+        &__form-wrapper
+            margin-top: 38px
+            width: 370px
+        & .getfree-form__input
+            width: 100%
+            margin-bottom: 15px
+            &:last-child
+                margin-bottom: 0
+        &__subform
+            margin-top: 30px
