@@ -2,6 +2,23 @@
 window.addEventListener('DOMContentLoaded', () => {
 
 
+  const button = document.querySelector("#button");
+  const modal = document.querySelector("#modal");
+  const overlay = document.querySelector(".overlay");
+  const close = document.querySelector("#close");
+  
+  button.addEventListener('click', function() {
+    modal.classList.add('modal_active');
+    overlay.classList.add('overlay_active');
+  })
+  close.addEventListener('click', function() {
+    modal.classList.remove('modal_active');
+    overlay.classList.remove('overlay_active');
+  })
+  
+
+
+
   const slider_responesive_conf = [
     {
       breakpoint: 1200,

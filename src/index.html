@@ -18,7 +18,7 @@
                     Калуга, Москва, МО
                     <a href="tel:+74954225131">+7 (495) 42-251-31</a> 
                 </div>
-                <button class="button navbar__button">Перезвоните мне</button>
+                <button class="button navbar__button" id="button">Перезвоните мне</button>
             </div>
         </div>
     </nav>
@@ -500,8 +500,89 @@
     </footer>
 
     <div class="overlay">
-        <div class="modal">
+        <div class="modal" id="modal">
+            <div class="modal__close" id="close">&times;</div>
+            <div class="modal-content">
+                <div class="modal-content__infos">
+                    <div class="modal-content__info">
+                        <div class="modal-content__img"><img src="img/info1.jpg" alt="info1"></div>
+                        <div class="modal-content__descr">
+                            <div class="modal-content__infocapt">Ванная комната</div>
+                            <ul class="modal-content__price">
+                                <li>12 м2 - <span>36 000 руб.</span></li>
+                                <li>135*150 - <span>31 000 руб.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-content__info">
+                        <div class="modal-content__img"><img src="img/info2.jpg" alt="info2"></div>
+                        <div class="modal-content__descr">
+                            <div class="modal-content__infocapt">Туалет</div>
+                            <div class="modal-content__price">16 м2 - <span>48 000 руб.</span></div>
+                        </div>
+                    </div>
+                    <div class="modal-content__info">
+                        <div class="modal-content__img"><img src="img/info3.jpg" alt="info3"></div>
+                        <div class="modal-content__descr">
+                            <div class="modal-content__infocapt">Совмещенный санузел</div>
+                            <div class="modal-content__price">20 м2 - <span>60 000 руб.</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-content__capt">В стоимость работ входит</div>
+                <ul class="modal-content__list">
+                    <li class="modal-content__item">Снятие верхнего слоя покрытия с потолка, стен и пола</li>
+                    <li class="modal-content__item">Подготовка оконного откоса</li>
+                    <li class="modal-content__item">Выравнивание стен гипсовым составом</li>
+                    <li class="modal-content__item">Виниловое покрытие, шлифовка, грунтовка</li>
+                    <li class="modal-content__item">Поклейка обоев и покраска</li>
+                    <li class="modal-content__item">Выравнивание потолка гипсовым составом</li>
+                    <li class="modal-content__item">Оклейка потолка потолочными обоями или его покраска</li>
+                    <li class="modal-content__item">Натяжной, тканевый или парящий потолок</li>
+                    <li class="modal-content__item">Протяжка пола, покрытие паркетной доской, ламинатом или линолеумом</li>
+                    <li class="modal-content__item">Замена электророзеток</li>
+                </ul>
+            </div>
+            <div class="modal-form">
+                <div class="title">Узнайте точную стоимость ремонта по телефону!</div>
+                <div class="descr">Заполните поля ниже - мы свяжемся с Вами</div>
+                <div class="modal-form__form-wrapper">
+                    <form class="getfree-form">
+                        <input type="text" class="getfree-form__input" placeholder="Ваше имя">
+                        <input type="text" class="getfree-form__input" placeholder="Ваш телефон">
+                        <input type="submit" class="button getfree-form__button" value="Узнать стоимость">
+                    </form>
+                </div>
+                <div class="modal-form__subform">Или Вы можете перезвонить нам сами по телефону: <a href="tel:+78182425131">+7 (8182) 42-51-31</a></div>
+            </div>
+        </div>
 
+        <div class="modal" id="modal_sec">
+            <div class="modal__close" id="close">&times;</div>
+            <div class="modal-content">
+                <div class="slider modal__slider">
+                    <div><a href="#"><img src="img/modal_slider1.jpg" alt="ourwork1"></a></div>
+                    <div><a href="#"><img src="img/modal_slider2.jpg" alt="ourwork2"></a></div>
+                    <div><a href="#"><img src="img/modal_slider3.jpg" alt="ourwork3"></a></div>
+                    <div><a href="#"><img src="img/modal_slider4.jpg" alt="ourwork1"></a></div>
+                </div>
+                <div class="modal-arrows">
+                    <button class="arrows__item arrow_left" id="since-work_arrow-left"><img src="img/modal_arrleft.png" alt="arrowleft"></button>
+                    <button class="arrows__item arrow_right" id="since-work_arrow-right"><img src="img/modal_arrright.png" alt="arrowright"></button>
+                </div>
+            </div>
+            <div class="modal-form">
+                <div class="title">Узнайте точную стоимость ремонта по телефону!</div>
+                <div class="descr">Заполните поля ниже - мы свяжемся с Вами</div>
+                <div class="modal-form__form-wrapper">
+                    <form class="getfree-form">
+                        <input type="text" class="getfree-form__input" placeholder="Ваше имя">
+                        <input type="text" class="getfree-form__input" placeholder="Ваш телефон">
+                        <input type="submit" class="button getfree-form__button" value="Узнать стоимость">
+                    </form>
+                </div>
+                <div class="modal-form__subform">Или Вы можете перезвонить нам сами по телефону: <a href="tel:+78182425131">+7 (8182) 42-51-31</a></div>
+            </div>
         </div>
     </div>
 
